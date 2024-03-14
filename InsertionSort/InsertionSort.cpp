@@ -6,11 +6,31 @@ using namespace std;
 int arr[20];                                            // Membuat Array dengan panjang data 20
 int n;                                                  // Membuat variabel inputan n
 
-void input() {
-    while (true)
+void input() {                                          // Procedure Input
+    while (true)                                        
     {
-        cout << 
+        cout << "Masukkan Jumlah Data pada Array : ";   // Membuat inputan jumlah element Array
+        cin >> n;                                       // Memanggil variabel inputan n
+
+        if (n <= 20) {                                  // Membuat kondisi n tidak lebih dari 20
+            break;
+        }
+        else
+        {
+            cout << "nArray yang anda masukkan maksimal 20 element.\n"; // Menampilkan pesan jika data lebih dari 20
+        }
     }
+    cout << endl;                                        // Membuat jarak per baris program
+    cout << "=======================" << endl;           // Membuat tampilan  susunan data element arrray
+    cout << "Masukkan Element Array" << endl;
+    cout << "=======================" << endl;
+
+    for (int i = 0; i < n; i++)                         // Menggunakan perulangan for untuk menyimpan data pada array
+    {
+        cout << "Data Ke-" << (i + 1) << ": ";          // Memasukkan atau menginputkan nilai data ke-n
+        cin >> arr[i];                                  // Menyimpan nilai data ke-n kedalam arrray arr
+    }
+
 }
 
     
