@@ -6,4 +6,11 @@ using namespace std;
 int arr[20];                                            // Membuat Array dengan panjang data 20
 int n;                                                  // Membuat variabel inputan n
 
+void input() {
+    while (true)
+    {
+        cout << 
+    }
+}
+
     
